@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+/* Tailwind css configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,html {
     margin: 0;
     padding: 0;
@@ -10,105 +15,10 @@ body,html {
     overflow: hidden;
 }
 
-/* Onboarding css begin */
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+.NextBtn__text {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-align: left;
+    white-space: nowrap;
 }
-
-.image-container img {
-    margin: 0;              
-}
-
-
-.welcome-text {
-    font-size: 36px;
-    color: #e3e2e7;
-    margin: 30px 20px 10px;
-}
-
-.welcome-text span {
-    display: block;
-    margin-top: 5px; 
-    font-size: 42px; 
-    color: #e3e2e7;
-}
-
-.welcome-content {
-    margin: 15px 20px;    
-    color: #e3e8e4;
-    font-size: 19px;
-    line-height: 1.5;
-}
-
-.nxt-btn {
-    background-color: #ea3b58;
-    color: #fff;           
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin: 2px auto;     
-    cursor: pointer;
-    width: 90%;           
-    max-width: 390px;    
-    height: 52px;
-    font-size: 21px;
-    font-weight: 700;    
-    display: block;       
-    text-align: center; 
-    border: black; 
-}
-
-/* Adjustments for smaller devices */
-@media (max-width: 480px) {
-    .image-container img {
-        height: 300px;    
-    }
-
-    .nxt-btn {
-        font-size: 16px;   
-        padding: 8px 16px; 
-    }
-}
-
-/* Adjustments for very small devices */
-@media (max-width: 320px) {
-    .image-container img {
-        height: 250px;  
-    }
-
-    .nxt-btn {
-        font-size: 14px;
-        padding: 6px 12px;
-        margin-top: 10px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .image-container {
-        padding: 20px;    
-        margin-top: 80px; 
-    }
-}
-
-.welcome-content-sm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    color: #fff;
-    gap: 10px; 
-    font-size: 19px;
-    padding: 6px; 
-    box-sizing: border-box;
-    margin-bottom: 15px;
-}
-
-.welcome-content-sm img {
-    width: 55px;
-    height: 15px;
-    vertical-align: middle;
-}
-
-/* Onboarding css end */

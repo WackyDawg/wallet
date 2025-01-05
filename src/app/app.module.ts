@@ -8,6 +8,7 @@ import { Screen1Component } from './pages/onboarding/screen-1/screen-1.component
 import { Screen2Component } from './pages/onboarding/screen-2/screen-2.component';
 import { Screen3Component } from './pages/onboarding/screen-3/screen-3.component';
 import { SignInComponent } from './pages/auth/sign-in/sign-in.component';
+import { Screen4Component } from './pages/onboarding/screen-4/screen-4.component';
 
 export function playerFactory() {
   return player;
@@ -18,7 +19,8 @@ export function playerFactory() {
     Screen1Component,
     Screen2Component,
     Screen3Component,
-    SignInComponent
+    SignInComponent,
+    Screen4Component
   ],
   imports: [
     BrowserModule,

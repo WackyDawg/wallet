@@ -1,0 +1,12 @@
+.googleSignIn__text {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.small-text {
+    font-size: 10px;
+  }
