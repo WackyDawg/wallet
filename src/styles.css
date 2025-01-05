@@ -1,27 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
 body,html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #0e100f;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;    
+    overflow: hidden;
 }
 
 /* Onboarding css begin */
 .image-container {
     display: flex;
-    justify-content: center; /* Horizontally center the image */
-    align-items: center;    /* Vertically center the image */
-    margin: 20px auto;      /* Push down the container and center it */
-    max-width: 100%;        /* Ensure it doesn't exceed the parent width */
-    height: auto;           /* Adjust height if necessary */
+    justify-content: center;
+    align-items: center;    
 }
 
 .image-container img {
-    max-width: 100%;        
-    height: 350px;         
     margin: 0;              
 }
+
 
 .welcome-text {
     font-size: 36px;
@@ -37,7 +36,7 @@ body,html {
 }
 
 .welcome-content {
-    margin: 30px 20px;      
+    margin: 15px 20px;    
     color: #e3e8e4;
     font-size: 19px;
     line-height: 1.5;
@@ -48,7 +47,7 @@ body,html {
     color: #fff;           
     padding: 10px 20px;
     border-radius: 15px;
-    margin: 30px auto;      
+    margin: 2px auto;     
     cursor: pointer;
     width: 90%;           
     max-width: 390px;    
@@ -56,7 +55,8 @@ body,html {
     font-size: 21px;
     font-weight: 700;    
     display: block;       
-    text-align: center;  
+    text-align: center; 
+    border: black; 
 }
 
 /* Adjustments for smaller devices */
@@ -68,7 +68,6 @@ body,html {
     .nxt-btn {
         font-size: 16px;   
         padding: 8px 16px; 
-        margin-top: 20px;  
     }
 }
 
@@ -81,35 +80,35 @@ body,html {
     .nxt-btn {
         font-size: 14px;
         padding: 6px 12px;
-        margin-top: 15px; 
+        margin-top: 10px; 
     }
 }
 
 @media (max-width: 480px) {
     .image-container {
         padding: 20px;    
-        margin-top: 60px;  
+        margin-top: 80px; 
     }
 }
 
-.welcome-content-sm img {
-  width: 55px;;
-  height: 15px;
-  vertical-align: middle;
+.welcome-content-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    gap: 10px; 
+    font-size: 19px;
+    padding: 6px; 
+    box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
-.welcome-content-sm {
-    display: flex;                
-    justify-content: center;       
-    align-items: center;           
-    text-align: center;           
-    margin: 0 auto;               
-    width: 100%;                  
-    height: 100%;                 
-    padding: 2px;          
-    color: #fff;
-    gap: 10px;  
-    font-size: 19px;  
-    box-sizing: border-box;       
+.welcome-content-sm img {
+    width: 55px;
+    height: 15px;
+    vertical-align: middle;
 }
+
 /* Onboarding css end */
