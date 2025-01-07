@@ -1,0 +1,58 @@
+<div class="container min-h-screen flex flex-col">
+    <header class="p-0 relative mt-10">
+        <div class="pt-5 mb-10">
+            <button (click)="navigateBack()" class="mr-24 text-white ml-5 p-0 absolute left-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="white" viewBox="0 0 24 24">
+                    <g data-name="Layer 2"><path d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1 1 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23 1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2" data-name="arrow-back"/></g>
+                </svg>
+            </button>
+        </div>
+        <h1 class="text-[#e3e2e7] text-4xl mx-5 block font-bold mb-6 pt-5">Choose method</h1>
+        <p class="welcome-content mx-5 my-2 text-[#e3e8e4] text-lg leading-relaxed mb-5">
+            We will send you a verification code, via your preferred method.
+        </p>
+    </header>
+    
+    <!-- Wrapper -->
+    <div class="p-4 px-6 py-5 mt-[-10px]">
+        <div class="w-35 mr-2 ml-0">
+            <ul class="space-y-10">
+                 <!-- Autofill with Whatsapp -->
+                 <li class="flex justify-between items-center cursor-pointer" onclick="document.getElementById('radioDefault01').checked = true;">
+                    <label class="text-white font-bold inline-flex items-center">
+                        <img class="mr-2" src="/assets/images/icons/whatsapp.png" width="23" alt="WhatsApp Icon" />
+                        Autofill with Whatsapp*
+                    </label>
+                    <input class="relative mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-gray-400 before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-[#25D366] checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-[#25D366] checked:after:bg-[#25D366] checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-[#25D366] checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] rtl:float-right dark:border-neutral-400 dark:checked:border-[#25D366]" type="radio" name="flexRadioDefault" id="radioDefault01" checked/>
+                </li>
+                
+                <!-- Receive code via text -->
+                <li class="flex justify-between items-center cursor-pointer" onclick="document.getElementById('radioDefault02').checked = true;">
+                    <label class="text-white font-bold inline-flex items-center">
+                        <img class="mr-2 gap-8 transform scale-x-[-1]" src="/assets/svg/icon-comments.svg" width="23" alt="Messages Icon" />
+                        Recieve code via text
+                    </label>
+                    <input class="relative mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-gray-400 before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-[#25D366] checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-[#25D366] checked:after:bg-[#25D366] checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-[#25D366] checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] rtl:float-right dark:border-neutral-400 dark:checked:border-[#25D366]" type="radio" name="flexRadioDefault" id="radioDefault02"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Move Minipay Information and Submit Button to the Bottom -->
+    <div class="mt-auto">
+        <!-- Minipay Information -->
+        <div class="px-6 flex items-start">
+            <span class="text-white font-medium">*Minipay will submit the code on your behalf.</span>
+        </div>
+        <div class="px-6 flex items-start mb-5">
+            <span class="text-[#25D366]">Learn more</span>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="px-6 py-2 flex justify-center items-center">
+            <button onclick="submitForm()" class="w-[356px] h-[55px] bg-[#ea3b58] text-white rounded-lg mb-[20px]">
+                Next
+            </button>
+        </div>  
+    </div>
+</div>

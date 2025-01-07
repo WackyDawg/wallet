@@ -4,8 +4,11 @@ import { Screen1Component } from './pages/onboarding/screen-1/screen-1.component
 import { Screen2Component } from './pages/onboarding/screen-2/screen-2.component';
 import { Screen3Component } from './pages/onboarding/screen-3/screen-3.component';
 import { Screen4Component } from './pages/onboarding/screen-4/screen-4.component';
+import { Screen5Component } from './pages/onboarding/screen-5/screen-5.component';
+import { Screen6Component } from './pages/onboarding/screen-6/screen-6.component';
 import { SignInComponent } from './pages/auth/sign-in/sign-in.component';
 import { onboardingGuard } from './guards/onboarding.guard';
+
 
 const routes: Routes = [
   //Default Route
@@ -15,6 +18,8 @@ const routes: Routes = [
   { path: 'onboarding/step-2', component: Screen2Component },
   { path: 'onboarding/step-3', component: Screen3Component},
   { path: 'onboarding/step-4', component: Screen4Component },
+  { path: 'onboarding/step-5', component: Screen5Component },
+  { path: 'onboarding/step-6', component: Screen6Component },
 
   //Auth Routes
   { path: 'auth/sign-in', component: SignInComponent },
