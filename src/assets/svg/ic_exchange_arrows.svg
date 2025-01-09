@@ -1,0 +1,14 @@
+<!-- Created by Apktool M – https://maximoff.su/apktool -->
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24">
+	<path
+		fill="rgb(0,0,0)"
+		fill-opacity="1.0"
+		fill-rule="evenodd"
+		d="M19,2a1,1 0,0 1,1 1v5a1,1 0,0 1,-1 1h-5a1,1 0,1 1,0 -2h2.9A6.99,6.99 0,0 0,11.5 5.018a7.005,7.005 0,0 0,-5.99 4.36,1 1,0 1,1 -1.855,-0.75A9,9 0,0 1,18 5.292L18,3a1,1 0,0 1,1 -1ZM19.792,14.07a1,1 0,0 1,0.553 1.302A9,9 0,0 1,6 18.708L6,21a1,1 0,1 1,-2 0v-5a1,1 0,0 1,1 -1h5a1,1 0,1 1,0 2L7.101,17a7,7 0,0 0,11.39 -2.377,1 1,0 0,1 1.301,-0.553Z" />
+</svg>

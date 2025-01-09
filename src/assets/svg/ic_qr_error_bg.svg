@@ -1,0 +1,18 @@
+<!-- Created by Apktool M – https://maximoff.su/apktool -->
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24">
+	<g>
+		<clipPath
+			d="M0,0h24v24h-24z" />
+		<path
+			fill="rgb(0,0,0)"
+			fill-opacity="1.0"
+			d="M10,5.5V4H4V10H10V5.5ZM18.5,14H17V13.868C16.3,13.743 15.63,13.533 15,13.248V16H13V14H11V16H13V18H11V20H13V18H17V20H20V18H17V16H20V14H18.5ZM11,9.504C11.286,10.039 11.629,10.541 12.019,11H11V9.504ZM11,11V13H4V11H11ZM6,2V0H0V6H2V2H6ZM8,6H6V8H8V6ZM4,14H10V20H4V14ZM6,16H8V18H6V16ZM6,22V24H0V18H2V22H6ZM24,18V24H18V22H22V18H24Z"
+			fill-rule="evenodd" />
+	</g>
+</svg>

@@ -1,0 +1,36 @@
+<div class="container bg-[#2a2c34] min-h-screen flex flex-col">
+    <div class="flex items-center justify-center mt-20">
+        <img [src]="'/assets/images/icons/google-lock.png'" class="image-snapshot" alt="">
+    </div>
+    <!-- Adjusted margin for the heading -->
+    <h1 class="welcome-text text-[#e3e2e7] text-2xl mx-5 block font-extrabold mt-23">
+        Secure your wallet<br>
+    </h1>
+    <!-- Adjusted margin for the list container -->
+    <div class="mx-5 mt-4">
+        <ul>
+            <li class="flex items-center space-x-4 mt-4">
+                <img [src]="'/assets/images/icons/google.png'" [srcset]="" width="23">
+                <span class="font-bold text-gray-500">Access to your wallet is secured by your Google account.</span>
+            </li>
+            <li class="flex items-center space-x-4 mt-4">
+                <img [src]="'/assets/images/icons/warning.png'" [srcset]="" width="23">
+                <span class="font-bold text-gray-500">Never share your Google account.</span>
+            </li>
+            <li class="flex items-center space-x-4 mt-4">
+                <img [src]="'/assets/images/icons/padlock.png'" [srcset]="" width="23">
+                <span class="font-bold text-gray-500">Never share your phone's PIN.</span>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Minipay Information and Submit Button -->
+    <div class="mt-auto">
+        <div class="px-6 py-2 flex justify-center items-center">
+            <button (click)="navigateNext()"
+                class="w-[356px] h-[55px] bg-[#fff] text-black font-extrabold rounded-lg mb-[20px]">
+                Next
+            </button>
+        </div>
+    </div>
+</div>

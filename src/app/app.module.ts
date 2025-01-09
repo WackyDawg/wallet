@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { LottieComponent, provideLottieOptions } from 'ngx-lottie';
 import player from 'lottie-web';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Screen1Component } from './pages/onboarding/screen-1/screen-1.component';
-import { Screen2Component } from './pages/onboarding/screen-2/screen-2.component';
-import { Screen3Component } from './pages/onboarding/screen-3/screen-3.component';
 import { SignInComponent } from './pages/auth/sign-in/sign-in.component';
-import { Screen4Component } from './pages/onboarding/screen-4/screen-4.component';
-import { Screen5Component } from './pages/onboarding/screen-5/screen-5.component';
 import { COUNTRIES } from './configs/countries.config';
-import { Screen6Component } from './pages/onboarding/screen-6/screen-6.component'; 
+import { OfflineComponent } from './pages/network-status/offline/offline.component';
+import { SecureWalletComponent } from './pages/onboarding/secure-wallet/secure-wallet.component';
+import { ConnectPhoneComponent } from './pages/onboarding/connect-phone/connect-phone.component';
+import { VerifyPhoneComponent } from './pages/onboarding/verify-phone/verify-phone.component';
+import { WelcomeComponent } from './pages/onboarding/welcome/welcome.component';
+import { VerifyCodeComponent } from './pages/onboarding/verify-code/verify-code.component';
+import { TermAcceptComponent } from './pages/onboarding/term-accept/term-accept.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component'; 
 
 export function playerFactory() {
   return player;
@@ -19,18 +22,21 @@ export function playerFactory() {
 @NgModule({
   declarations: [
     AppComponent,
-    Screen1Component,
-    Screen2Component,
-    Screen3Component,
     SignInComponent,
-    Screen4Component,
-    Screen5Component,
-    Screen6Component
+    OfflineComponent,
+    SecureWalletComponent,
+    ConnectPhoneComponent,
+    VerifyPhoneComponent,
+    WelcomeComponent,
+    VerifyCodeComponent,
+    TermAcceptComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LottieComponent
+    LottieComponent,
+    FormsModule
   ],
   providers: [
     provideLottieOptions({

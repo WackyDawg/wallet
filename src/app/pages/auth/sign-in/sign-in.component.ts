@@ -37,7 +37,7 @@ export class SignInComponent {
     this.isLoading = true;
     setTimeout(() => {
       this.isLoading = false;
-      this.router.navigate(['/onboarding/step-4']);
+      this.router.navigate(['/onboarding/step-1']);
     }, 2000);
   }
 }

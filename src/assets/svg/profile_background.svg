@@ -1,0 +1,92 @@
+<!-- Created by Apktool M – https://maximoff.su/apktool -->
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="360"
+	height="204"
+	viewBox="0 0 360 204">
+	<g>
+		<clipPath
+			d="M0,0h360v204h-360z" />
+		<path
+			fill="rgb(241,243,242)"
+			fill-opacity="1.0"
+			d="M0,0h360v204h-360z" />
+		<path
+			fill="rgb(219,224,221)"
+			d="M80,160C35.82,160 0,124.18 0,80H40C40,102.09 57.91,120 80,120V160Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(219,224,221)"
+			d="M120,120m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(219,224,221)"
+			d="M160,80C204.18,80 240,115.82 240,160H200C200,137.91 182.09,120 160,120V80Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(219,224,221)"
+			d="M320,80C275.82,80 240,115.82 240,160H320V80Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M400,160C355.82,160 320,124.18 320,80H360C360,102.09 377.91,120 400,120V160Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M80,240C35.82,240 0,204.18 0,160H80V240Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(219,224,221)"
+			d="M80,160C124.18,160 160,195.82 160,240H80V160Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M240,160C240,204.18 204.18,240 160,240L160,160L240,160Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M320,160C320,204.18 284.18,240 240,240L240,160L320,160Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M360,160C364.12,180.14 379.86,195.88 400,200C379.86,204.12 364.12,219.86 360,240C355.88,219.86 340.14,204.12 320,200C340.14,195.88 355.88,180.14 360,160Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M0,0C-0,44.18 35.82,80 80,80L80,40C57.91,40 40,22.09 40,0L0,0Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(219,224,221)"
+			d="M80,80C124.18,80 160,44.18 160,0H120C120,22.09 102.09,40 80,40V80Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M240,0C195.82,0 160,35.82 160,80H200C200,57.91 217.91,40 240,40V0Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(227,232,229)"
+			d="M280,0C284.12,20.14 299.86,35.88 320,40C299.86,44.12 284.12,59.86 280,80C275.88,59.86 260.14,44.12 240,40C260.14,35.88 275.88,20.14 280,0Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+		<path
+			fill="rgb(219,224,221)"
+			d="M320,0C364.18,0 400,35.82 400,80H320V0Z"
+			stroke-opacity="0.6"
+			fill-opacity="0.6" />
+	</g>
+</svg>

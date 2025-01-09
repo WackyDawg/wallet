@@ -1,0 +1,13 @@
+<!-- Created by Apktool M – https://maximoff.su/apktool -->
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="24.0"
+	height="24.0"
+	viewBox="0 0 24.0 24.0">
+	<path
+		fill="rgb(255,255,255)"
+		fill-opacity="1.0"
+		d="@string/path_password_eye" />
+</svg>

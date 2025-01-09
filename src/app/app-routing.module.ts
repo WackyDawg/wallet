@@ -1,28 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Screen1Component } from './pages/onboarding/screen-1/screen-1.component';
-import { Screen2Component } from './pages/onboarding/screen-2/screen-2.component';
-import { Screen3Component } from './pages/onboarding/screen-3/screen-3.component';
-import { Screen4Component } from './pages/onboarding/screen-4/screen-4.component';
-import { Screen5Component } from './pages/onboarding/screen-5/screen-5.component';
-import { Screen6Component } from './pages/onboarding/screen-6/screen-6.component';
 import { SignInComponent } from './pages/auth/sign-in/sign-in.component';
 import { onboardingGuard } from './guards/onboarding.guard';
+import { OfflineComponent } from './pages/network-status/offline/offline.component';
+import { SecureWalletComponent } from './pages/onboarding/secure-wallet/secure-wallet.component';
+import { ConnectPhoneComponent } from './pages/onboarding/connect-phone/connect-phone.component';
+import { VerifyPhoneComponent } from './pages/onboarding/verify-phone/verify-phone.component';
+import { VerifyCodeComponent } from './pages/onboarding/verify-code/verify-code.component';
+import { TermAcceptComponent } from './pages/onboarding/term-accept/term-accept.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 const routes: Routes = [
   //Default Route
-  { path: '', component: Screen1Component, canActivate: [onboardingGuard]},
+  { path: '', component: SignInComponent, canActivate: [onboardingGuard]},
   //onboarding routes
-  { path: 'onboarding/step-1', component: Screen1Component },
-  { path: 'onboarding/step-2', component: Screen2Component },
-  { path: 'onboarding/step-3', component: Screen3Component},
-  { path: 'onboarding/step-4', component: Screen4Component },
-  { path: 'onboarding/step-5', component: Screen5Component },
-  { path: 'onboarding/step-6', component: Screen6Component },
+  { path: 'onboarding/step-1', component: SecureWalletComponent },
+  { path: 'onboarding/step-2', component: ConnectPhoneComponent },
+  { path: 'onboarding/step-3', component: VerifyPhoneComponent},
+  { path: 'onboarding/step-4', component: VerifyCodeComponent },
+  { path: 'onboarding/step-5', component: TermAcceptComponent },
 
   //Auth Routes
   { path: 'auth/sign-in', component: SignInComponent },
+
+  //Dashboard Routes
+  { path: 'dashboard', component: DashboardComponent},
+
+  //Network Status Routes
+  { path: 'network-status/offline', component: OfflineComponent },
 ];
 
 @NgModule({

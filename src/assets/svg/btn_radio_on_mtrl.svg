@@ -1,0 +1,30 @@
+<!-- Created by Apktool M – https://maximoff.su/apktool -->
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="32.0"
+	height="32.0"
+	viewBox="0 0 32.0 32.0">
+	<g
+		transform="translate(16.0 16.0)"
+		name="btn_radio_to_off_mtrl_0">
+		<g
+			name="ring_outer">
+			<path
+				stroke="rgb(0,0,0)"
+				stroke-opacity="1.0"
+				name="ring_outer_path"
+				d="M 0.0,-9.0 c 4.9705627482,0.0 9.0,4.0294372518 9.0,9.0 c 0.0,4.9705627482 -4.0294372518,9.0 -9.0,9.0 c -4.9705627482,0.0 -9.0,-4.0294372518 -9.0,-9.0 c 0.0,-4.9705627482 4.0294372518,-9.0 9.0,-9.0 Z"
+				stroke-width="2.0" />
+		</g>
+		<g
+			name="dot_group">
+			<path
+				fill="rgb(0,0,0)"
+				fill-opacity="1.0"
+				name="dot_path"
+				d="M 0.0,-5.0 c -2.7619934082,0.0 -5.0,2.2380065918 -5.0,5.0 c 0.0,2.7619934082 2.2380065918,5.0 5.0,5.0 c 2.7619934082,0.0 5.0,-2.2380065918 5.0,-5.0 c 0.0,-2.7619934082 -2.2380065918,-5.0 -5.0,-5.0 Z" />
+		</g>
+	</g>
+</svg>

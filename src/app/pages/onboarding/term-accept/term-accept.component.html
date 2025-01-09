@@ -1,0 +1,40 @@
+<div class="container bg-[#2a2c34] min-h-screen flex flex-col relative overflow-hidden">
+    <!-- Lottie Animation -->
+    <ng-lottie *ngIf="showAnimation" [options]="greenConfetti" (animationCreated)="onAnimate($event)"
+        class="w-full absolute z-20 animate-fall"></ng-lottie>
+
+    <div class="relative flex items-center justify-center mt-20">
+        <img [src]="'/assets/images/icons/money-stack.png'" class="image-snapshot z-0" alt="">
+    </div>
+
+    <h1 class="welcome-text text-[#e3e2e7] text-2xl mx-5 block font-extrabold mt-23">
+        We use dollar stablecoins<br>
+    </h1>
+    <div class="mx-5 mt-4">
+        <ul>
+            <li class="flex items-center mt-4">
+                <img class="w-[48px] h-[48px]" [src]="'/assets/images/icons/coin.png'" [srcset]="">
+                <span class="ml-2 font-bold text-gray-500">Often called "stablecoins" as they follow the price of the
+                    U.S. dollar</span>
+            </li>
+            <li class="flex items-center mt-4">
+                <img class="w-[48px] h-[48px]" [src]="'/assets/images/icons/doll-sign.png'" [srcset]="">
+                <span class="ml-2 font-bold text-gray-500">Your balance is always held in stablecoins</span>
+            </li>
+            <li class="flex items-center mt-4">
+                <img class="w-[48px] h-[48px]" [src]="'/assets/images/icons/paper-jet.png'" [srcset]="">
+                <span class="ml-2 font-bold text-gray-500">Can be transacted directly from your wallet, without
+                    banks</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mt-auto">
+        <div class="px-6 py-2 flex justify-center items-center">
+            <button (click)="navigateNext()"
+                class="w-[356px] h-[55px] bg-[#fff] text-black font-extrabold rounded-lg mb-[20px]">
+                I understand
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,233 @@
+<!-- Created by Apktool M – https://maximoff.su/apktool -->
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="320"
+	height="192"
+	viewBox="0 0 320 192">
+	<path
+		fill="rgb(30,168,160)"
+		fill-opacity="1.0"
+		d="M0,0h320v192h-320z" />
+	<path
+		d="M0,0H64V64C28.65,64 0,35.35 0,0Z"
+		fill-opacity="0.5">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="32"
+				startY="0"
+				endX="32"
+				endY="64"
+				type="linear">
+				<item
+					offset="0"
+					color="#FF49D5CC" />
+				<item
+					offset="1"
+					color="#0049D5CC" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M256,128H320V192V192C284.65,192 256,163.35 256,128V128Z"
+		fill-opacity="0.5">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="288"
+				startY="128"
+				endX="288"
+				endY="192"
+				type="linear">
+				<item
+					offset="0"
+					color="#FF49D5CC" />
+				<item
+					offset="1"
+					color="#0049D5CC" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M128,128L64,128L64,64C99.35,64 128,92.65 128,128Z"
+		fill-opacity="0.5">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="96"
+				startY="128"
+				endX="96"
+				endY="64"
+				type="linear">
+				<item
+					offset="0"
+					color="#0049D5CC" />
+				<item
+					offset="1"
+					color="#FF49D5CC" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M64,192l-64,-0l-0,-64l64,-0z"
+		fill-opacity="0.3">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="32"
+				startY="192"
+				endX="32"
+				endY="128"
+				type="linear">
+				<item
+					offset="0"
+					color="#00188B84" />
+				<item
+					offset="1"
+					color="#FF188B84" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M192,192C192,156.65 220.65,128 256,128L256,192L192,192Z"
+		fill-opacity="0.4">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="192"
+				startY="160"
+				endX="256"
+				endY="160"
+				type="linear">
+				<item
+					offset="0"
+					color="#FF188B84" />
+				<item
+					offset="1"
+					color="#00188B84" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M64,96C64,113.67 49.67,128 32,128V128C14.33,128 0,113.67 0,96V96C0,78.33 14.33,64 32,64L64,64L64,96Z"
+		fill-opacity="0.4">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="32"
+				startY="128"
+				endX="32"
+				endY="64"
+				type="linear">
+				<item
+					offset="0"
+					color="#0015867F" />
+				<item
+					offset="1"
+					color="#FF15867F" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M320,96C320,113.67 305.67,128 288,128V128C270.33,128 256,113.67 256,96V96C256,78.33 270.33,64 288,64L320,64L320,96Z"
+		fill-opacity="0.4">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="288"
+				startY="128"
+				endX="288"
+				endY="64"
+				type="linear">
+				<item
+					offset="0"
+					color="#0015867F" />
+				<item
+					offset="1"
+					color="#FF15867F" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M192,128l-64,-0l-0,-64l64,-0z"
+		fill-opacity="0.4">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="160"
+				startY="128"
+				endX="160"
+				endY="64"
+				type="linear">
+				<item
+					offset="0"
+					color="#0015867F" />
+				<item
+					offset="1"
+					color="#FF15867F" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M64,32C64,14.33 78.33,0 96,0C113.67,0 128,14.33 128,32V64H96C78.33,64 64,49.67 64,32Z"
+		fill-opacity="0.4">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="96"
+				startY="0"
+				endX="96"
+				endY="64"
+				type="linear">
+				<item
+					offset="0"
+					color="#FF188B84" />
+				<item
+					offset="1"
+					color="#00188B84" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M128,160C128,142.33 142.33,128 160,128C177.67,128 192,142.33 192,160V192H160C142.33,192 128,177.67 128,160Z"
+		fill-opacity="0.5">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="160"
+				startY="128"
+				endX="160"
+				endY="192"
+				type="linear">
+				<item
+					offset="0"
+					color="#FF49D5CC" />
+				<item
+					offset="1"
+					color="#0049D5CC" />
+			</gradient>
+		</aapt:attr>
+	</path>
+	<path
+		d="M192,32C192,14.33 206.33,0 224,0H256V32C256,49.67 241.67,64 224,64H192V32Z"
+		fill-opacity="0.5">
+		<aapt:attr
+			name="android:fillColor">
+			<gradient
+				startX="224"
+				startY="0"
+				endX="224"
+				endY="64"
+				type="linear">
+				<item
+					offset="0"
+					color="#0049D5CC" />
+				<item
+					offset="1"
+					color="#FF49D5CC" />
+			</gradient>
+		</aapt:attr>
+	</path>
+</svg>

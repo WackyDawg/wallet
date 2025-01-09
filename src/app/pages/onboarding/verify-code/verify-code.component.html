@@ -1,0 +1,46 @@
+<div class="container bg-[#2a2c34] min-h-screen flex flex-col">
+    <header class="p-0 relative mt-10">
+        <div class="pt-5 mb-10">
+            <button (click)="navigateBack()" class="mr-24 text-white ml-5 p-0 absolute left-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="white" viewBox="0 0 24 24"><g data-name="Layer 2"><path d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1 1 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23 1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2" data-name="arrow-back"/></g></svg>
+            </button>
+          </div>
+      <h1 class="text-[#e3e2e7] text-4xl mx-5 block font-bold mb-6 pt-5">Verification code</h1>
+    </header>
+  
+    <!-- Input Field -->
+    <div class="p-4 px-6 py-5 mt-[-10px]">
+      <div class="flex flex-col items-center">
+        <p class="welcome-content mx-5 my-2 text-[#a0a4c1] text-nowrap leading-relaxed mb-5">
+          Enter the verification code sent to +2349150556274
+        </p>
+        <input
+          type="tel"
+          [(ngModel)]="verificationCode"
+          (input)="onCodeChange()"
+          class="bg-[#444657] w-[225px] h-[63px] px-4 py-2 text-bold text-center font-bold text-white rounded-full focus:outline-none mb-2"
+          placeholder="Verification code"
+          maxlength="6"
+        />
+        <small class="text-white text-nowrap font-sans">
+          Didn't get the message? Resend code in <span class="text-[#a0a4c1]">41s</span>
+        </small>
+      </div>
+    </div>
+  
+    <!-- Submit Button -->
+    <div class="mt-auto px-6 py-2 flex justify-center items-center">
+      <button
+        (click)="navigateNext()"
+        [disabled]="verificationCode.length !== 6"
+        [class.bg-gray-500]="verificationCode.length !== 6"
+        [class.bg-white]="verificationCode.length === 6"
+        [class.text-black]="verificationCode.length !== 6"
+        [class.text-grey-500]="verificationCode.length === 6"
+        class="w-[356px] h-[55px] font-extrabold rounded-lg mb-[20px]"
+      >
+        Connect
+      </button>
+    </div>
+  </div>
+  
