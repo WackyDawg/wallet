@@ -1,0 +1,22 @@
+<div class="h-auto overflow-x-scroll whitespace-nowrap">
+  <div class="inline-block p-4 w-full" *ngFor="let campaign of campaigns">
+    <div class="mx-auto">
+      <div class="flex p-3 dark:bg-[#333542] border border-[#333542] rounded-xl overflow-hidden items-center justify-start">
+
+        <div class="flex flex-col gap-2 py-2 flex-grow">
+          <p class="text-white text-xl font-bold">
+            {{ campaign.title }}
+          </p>
+          <p class="text-white text-wrap" style="font-size: 14px">
+            {{ campaign.description }}
+          </p>
+        </div>
+
+        <div class="relative w-20 h-20 flex-shrink-0">
+          <img class="absolute left-0 top-0 w-full h-full object-cover object-center transition duration-50" loading="lazy" src="{{ campaign.image }}">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

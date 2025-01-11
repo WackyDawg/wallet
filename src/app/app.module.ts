@@ -14,7 +14,13 @@ import { VerifyPhoneComponent } from './pages/onboarding/verify-phone/verify-pho
 import { WelcomeComponent } from './pages/onboarding/welcome/welcome.component';
 import { VerifyCodeComponent } from './pages/onboarding/verify-code/verify-code.component';
 import { TermAcceptComponent } from './pages/onboarding/term-accept/term-accept.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component'; 
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { DraggableDirective } from './directives/draggable.directive';
+import { MiniAppsComponent } from './pages/mini-apps/mini-apps.component';
+import { MyQrComponent } from './pages/my-qr/my-qr.component';
+import { CampaignsComponent } from './shared/campaigns/campaigns.component';
+import { BrowserComponent } from './shared/browser/browser.component';
 
 export function playerFactory() {
   return player;
@@ -30,7 +36,13 @@ export function playerFactory() {
     WelcomeComponent,
     VerifyCodeComponent,
     TermAcceptComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavbarComponent,
+    DraggableDirective,
+    MiniAppsComponent,
+    MyQrComponent,
+    CampaignsComponent,
+    BrowserComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { VerifyPhoneComponent } from './pages/onboarding/verify-phone/verify-pho
 import { VerifyCodeComponent } from './pages/onboarding/verify-code/verify-code.component';
 import { TermAcceptComponent } from './pages/onboarding/term-accept/term-accept.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { MiniAppsComponent } from './pages/mini-apps/mini-apps.component';
+import { BrowserComponent } from './shared/browser/browser.component';
 
 
 const routes: Routes = [
@@ -26,9 +28,13 @@ const routes: Routes = [
 
   //Dashboard Routes
   { path: 'dashboard', component: DashboardComponent},
+  { path: 'mini-apps', component: MiniAppsComponent},
 
   //Network Status Routes
   { path: 'network-status/offline', component: OfflineComponent },
+
+  //Other Routes
+  { path: 'browser', component: BrowserComponent}
 ];
 
 @NgModule({
