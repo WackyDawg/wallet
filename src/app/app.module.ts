@@ -21,6 +21,7 @@ import { MiniAppsComponent } from './pages/mini-apps/mini-apps.component';
 import { MyQrComponent } from './pages/my-qr/my-qr.component';
 import { CampaignsComponent } from './shared/campaigns/campaigns.component';
 import { BrowserComponent } from './shared/browser/browser.component';
+import { TransactionHistoryComponent } from './shared/transaction-history/transaction-history.component';
 
 export function playerFactory() {
   return player;
@@ -43,6 +44,7 @@ export function playerFactory() {
     MyQrComponent,
     CampaignsComponent,
     BrowserComponent,
+    TransactionHistoryComponent,
   ],
   imports: [
     BrowserModule,

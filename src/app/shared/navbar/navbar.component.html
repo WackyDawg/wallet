@@ -19,22 +19,111 @@
 
 
     <button (click)="miniAppsNav()" data-tooltip-target="tooltip-home" type="button" class="inline-flex flex-col w-[52px] h-[52px] items-center justify-center w-15 mr-10 px-3 rounded-full group" [ngClass]="{'bg-[#275a47]': isActive('/mini-apps')}">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
-        <path [attr.fill]="isActive('/mini-apps') ? '#15a870' : '#ffff'" fill-opacity="1.0" d="M12,13.1C11.688,13.1 11.427,12.995 11.216,12.784C11.005,12.573 10.9,12.312 10.9,12C10.9,11.688 11.005,11.427 11.216,11.216C11.427,11.005 11.688,10.9 12,10.9C12.312,10.9 12.573,11.005 12.784,11.216C12.995,11.427 13.1,11.688 13.1,12C13.1,12.312 12.995,12.573 12.784,12.784C12.573,12.995 12.312,13.1 12,13.1ZM12,23C10.478,23 9.048,22.711 7.71,22.134C6.372,21.556 5.207,20.772 4.218,19.782C3.227,18.792 2.444,17.628 1.866,16.29C1.289,14.952 1,13.522 1,12C1,10.478 1.289,9.048 1.866,7.71C2.444,6.372 3.227,5.207 4.218,4.218C5.207,3.227 6.372,2.444 7.71,1.866C9.048,1.289 10.478,1 12,1C13.522,1 14.952,1.289 16.29,1.866C17.628,2.444 18.792,3.227 19.782,4.218C20.772,5.207 21.556,6.372 22.134,7.71C22.711,9.048 23,10.478 23,12C23,13.522 22.711,14.952 22.134,16.29C21.556,17.628 20.772,18.792 19.782,19.782C18.792,20.772 17.628,21.556 16.29,22.134C14.952,22.711 13.522,23 12,23ZM12,20.8C14.457,20.8 16.538,19.948 18.243,18.243C19.948,16.538 20.8,14.457 20.8,12C20.8,9.543 19.948,7.463 18.243,5.758C16.538,4.052 14.457,3.2 12,3.2C9.543,3.2 7.463,4.052 5.758,5.758C4.052,7.463 3.2,9.543 3.2,12C3.2,14.457 4.052,16.538 5.758,18.243C7.463,19.948 9.543,20.8 12,20.8ZM6.968,17.583L13.842,14.365C13.953,14.31 14.053,14.237 14.145,14.145C14.237,14.053 14.31,13.953 14.365,13.842L17.583,6.968C17.674,6.784 17.651,6.624 17.514,6.486C17.376,6.349 17.216,6.326 17.032,6.418L10.158,9.635C10.047,9.69 9.947,9.763 9.855,9.855C9.763,9.947 9.69,10.047 9.635,10.158L6.418,17.032C6.326,17.216 6.349,17.376 6.486,17.514C6.624,17.651 6.784,17.674 6.968,17.583Z" />
-      </svg>
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+          <path [attr.fill]="isActive('/mini-apps') ? '#15a870' : '#ffff'" fill-opacity="1.0" d="M12,13.1C11.688,13.1 11.427,12.995 11.216,12.784C11.005,12.573 10.9,12.312 10.9,12C10.9,11.688 11.005,11.427 11.216,11.216C11.427,11.005 11.688,10.9 12,10.9C12.312,10.9 12.573,11.005 12.784,11.216C12.995,11.427 13.1,11.688 13.1,12C13.1,12.312 12.995,12.573 12.784,12.784C12.573,12.995 12.312,13.1 12,13.1ZM12,23C10.478,23 9.048,22.711 7.71,22.134C6.372,21.556 5.207,20.772 4.218,19.782C3.227,18.792 2.444,17.628 1.866,16.29C1.289,14.952 1,13.522 1,12C1,10.478 1.289,9.048 1.866,7.71C2.444,6.372 3.227,5.207 4.218,4.218C5.207,3.227 6.372,2.444 7.71,1.866C9.048,1.289 10.478,1 12,1C13.522,1 14.952,1.289 16.29,1.866C17.628,2.444 18.792,3.227 19.782,4.218C20.772,5.207 21.556,6.372 22.134,7.71C22.711,9.048 23,10.478 23,12C23,13.522 22.711,14.952 22.134,16.29C21.556,17.628 20.772,18.792 19.782,19.782C18.792,20.772 17.628,21.556 16.29,22.134C14.952,22.711 13.522,23 12,23ZM12,20.8C14.457,20.8 16.538,19.948 18.243,18.243C19.948,16.538 20.8,14.457 20.8,12C20.8,9.543 19.948,7.463 18.243,5.758C16.538,4.052 14.457,3.2 12,3.2C9.543,3.2 7.463,4.052 5.758,5.758C4.052,7.463 3.2,9.543 3.2,12C3.2,14.457 4.052,16.538 5.758,18.243C7.463,19.948 9.543,20.8 12,20.8ZM6.968,17.583L13.842,14.365C13.953,14.31 14.053,14.237 14.145,14.145C14.237,14.053 14.31,13.953 14.365,13.842L17.583,6.968C17.674,6.784 17.651,6.624 17.514,6.486C17.376,6.349 17.216,6.326 17.032,6.418L10.158,9.635C10.047,9.69 9.947,9.763 9.855,9.855C9.763,9.947 9.69,10.047 9.635,10.158L6.418,17.032C6.326,17.216 6.349,17.376 6.486,17.514C6.624,17.651 6.784,17.674 6.968,17.583Z" />
+        </svg>
+        <span class="absolute top-0 right-0 w-2 h-2 bg-[#e03838] rounded-full flex items-center justify-center shadow-md"></span>
+      </div>
       <span class="sr-only">Mini Apps</span>
     </button>
   </div>
   <div id="hello" class="h-screen dark:bg-[#333542] text-white p-4 relative">
-    <h2 class="text-xl font-semibold">Expanded Navbar Content</h2>
-    <p>When you pull up the navbar, it will expand and show additional content here.</p>
-    
-    <!-- Button at the bottom -->
-    <div class="absolute bottom-4 left-0 mb-10 right-0 px-6">
-        <button class="w-[356px] h-[55px] bg-[#fff] text-black font-extrabold rounded-lg mx-auto block">
-            Next
+
+    <!--Total Section-->
+    <section class="flex items-center justify-center" style="position: relative; top: 15px;">
+      <button class="rounded-full border border-gray-600 w-[90px] h-[35px]">
+        <span class="text-white font-medium">Total: $0</span>
+      </button>
+    </section>
+
+    <!--Amount Section-->
+    <section class="flex items-center justify-center" style="position: relative; top: 140px">
+      <div class="flex flex-col items-center gap-3">
+        <small class="font-medium font-sans text-[#adaeb3]" style="font-size: small; font-weight: 700;">I want to send</small>
+        <h1 class="font-extrabold text-6xl font-mono">{{ displayValue }}</h1>
+        <div class="flex items-center flex-wrap shrink-0 gap-1 bg-bolt-elements-background-depth-1 overflow-hidden w-[116px] border border-green-600 rounded-full p-1 relative">
+          <!-- Background Span -->
+          <span class="absolute bg-bolt-elements-item-backgroundAccent rounded-full transition-transform duration-300" [ngStyle]="{
+              transform: selectedCurrency === 'NGN' ? 'translateX(55px)' : 'translateX(0)',
+              width: '55px',
+              height: '100%'
+            }"></span>
+
+          <button class="bg-transparent text-sm px-2.5 py-0.5 rounded-full relative" [class.text-bolt-elements-item-contentAccent]="selectedCurrency === 'USD'" [class.text-bolt-elements-item-contentDefault]="selectedCurrency !== 'USD'" (click)="setCurrency('USD')">
+            <span class="relative z-10">USD</span>
+          </button>
+
+          <!-- NGN Button -->
+          <button class="bg-transparent text-sm px-2.5 py-0.5 rounded-full relative" [class.text-bolt-elements-item-contentAccent]="selectedCurrency === 'NGN'" [class.text-bolt-elements-item-contentDefault]="selectedCurrency !== 'NGN'" [class.hover:text-bolt-elements-item-contentActive]="true" (click)="setCurrency('NGN')">
+            <span class="relative z-10">NGN</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Keypad Section-->
+    <section class="flex items-center justify-center" style="position: relative; top: 250px;">
+      <div class="grid grid-cols-3 gap-x-2 gap-y-9" style="max-width: 500px;">
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('1')">
+          <span class="font-bold text-white text-3xl">1</span>
         </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('2')">
+          <span class="font-bold text-white text-3xl">2</span>
+        </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('3')">
+          <span class="font-bold text-white text-3xl">3</span>
+        </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('4')">
+          <span class="font-bold text-white text-3xl">4</span>
+        </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('5')">
+          <span class="font-bold text-white text-3xl">5</span>
+        </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('6')">
+          <span class="font-bold text-white text-3xl">6</span>
+        </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('7')">
+          <span class="font-bold text-white text-3xl">7</span>
+        </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('8')">
+          <span class="font-bold text-white text-3xl">8</span>
+        </button>
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('9')">
+          <span class="font-bold text-white text-3xl">9</span>
+        </button>
+    
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('.')">
+          <span *ngIf="selectedCurrency === 'USD'" class="font-bold text-white text-3xl">.</span>
+        </button>
+    
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('0')">
+          <span class="font-bold text-white text-3xl">0</span>
+        </button>
+    
+        <button class="active:bg-gray-500 rounded-full keypad-btn w-[85px] flex items-center justify-center" (click)="onKeyPress('backspace')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <path fill="none" stroke="#fff" stroke-opacity="1.0" d="M11.141,7H24C26.209,7 28,8.791 28,11V21.5C28,23.709 26.209,25.5 24,25.5H11.205C9.832,25.5 8.556,24.796 7.823,23.636L3.693,17.097C3.272,16.43 3.282,15.577 3.72,14.92L7.813,8.781C8.554,7.668 9.803,7 11.141,7Z" stroke-width="2" />
+            <path fill="#fff" fill-opacity="1.0" d="M13.517,20.7C13.239,20.7 13,20.6 12.8,20.4C12.622,20.222 12.533,19.994 12.533,19.717C12.533,19.439 12.622,19.2 12.8,19L15.833,16L12.8,13C12.6,12.8 12.5,12.556 12.5,12.267C12.5,11.978 12.6,11.744 12.8,11.567C13,11.389 13.233,11.294 13.5,11.283C13.767,11.272 14,11.367 14.2,11.567L17.233,14.6L20.2,11.6C20.4,11.4 20.639,11.3 20.917,11.3C21.194,11.3 21.433,11.4 21.633,11.6C21.833,11.8 21.933,12.033 21.933,12.3C21.933,12.567 21.833,12.8 21.633,13L18.633,16L21.667,19C21.867,19.2 21.967,19.439 21.967,19.717C21.967,19.994 21.867,20.233 21.667,20.433C21.467,20.633 21.233,20.733 20.967,20.733C20.7,20.733 20.467,20.633 20.267,20.433L17.233,17.4L14.233,20.4C14.033,20.6 13.794,20.7 13.517,20.7Z" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    
+
+
+    <div class="absolute bottom-4 left-0 mb-6 right-0 px-6">
+      <button 
+      class="w-[356px] h-[57px] bg-[#fff] text-black font-extrabold rounded-xl mx-auto block"
+      [class.bg-gray-500]="displayValue === '0'"
+      [class.text-gray-600]="displayValue === '0'"
+      [class.cursor-not-allowed]="displayValue === '0'" 
+      [disabled]="displayValue === '0'">
+      Next
+    </button>
+    
     </div>
-</div>
+  </div>
 
 </div>

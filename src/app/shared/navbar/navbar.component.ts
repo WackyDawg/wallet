@@ -8,6 +8,32 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
   constructor(private router: Router) {}
+  displayValue: string = '0';
+  maxLimit: number = 999999;
+  keys: (string | 'backspace')[] = [
+    '1', '2', '3',
+    '4', '5', '6',
+    '7', '8', '9',
+    '0', 'backspace'
+  ];
+
+  onKeyPress(key: string | 'backspace'): void {
+    if (key === 'backspace') {
+      this.displayValue = this.displayValue.length > 1
+        ? this.displayValue.slice(0, -1)
+        : '0';
+    } else if (key === '.') {
+      if (!this.displayValue.includes('.')) {
+        this.displayValue += key;
+      }
+    } else {
+      const newValue = this.displayValue === '0' ? key : this.displayValue + key;
+
+      if (parseFloat(newValue) <= this.maxLimit) {
+        this.displayValue = newValue;
+      }
+    }
+  }
 
   isActive(route: string): boolean {
     return this.router.url === route;
@@ -27,7 +53,13 @@ export class NavbarComponent {
       const currentY = event.touches[0].clientY;
       const diff = this.startY - currentY;
 
-      this.navbarHeight = this.navbarHeight + diff;
+      const newHeight = this.navbarHeight + diff;
+
+      if (this.navbarHeight >= window.innerHeight + 100 && diff > 0) {
+        return;
+      }
+
+      this.navbarHeight = newHeight;
 
       if (this.navbarHeight < 80) {
         this.navbarHeight = 80;
@@ -57,5 +89,11 @@ export class NavbarComponent {
 
   walletNav(): void {
     this.router.navigate(['/dashboard']);
+  }
+
+  selectedCurrency: 'USD' | 'NGN' = 'USD';
+
+  setCurrency(currency: 'USD' | 'NGN') {
+    this.selectedCurrency = currency;
   }
 }

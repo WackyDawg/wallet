@@ -11,6 +11,7 @@ import { TermAcceptComponent } from './pages/onboarding/term-accept/term-accept.
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MiniAppsComponent } from './pages/mini-apps/mini-apps.component';
 import { BrowserComponent } from './shared/browser/browser.component';
+import { MyQrComponent } from './pages/my-qr/my-qr.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
   { path: 'network-status/offline', component: OfflineComponent },
 
   //Other Routes
-  { path: 'browser', component: BrowserComponent}
+  { path: 'browser', component: BrowserComponent},
+  { path: 'my-qrcode', component: MyQrComponent},
 ];
 
 @NgModule({

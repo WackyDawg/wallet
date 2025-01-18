@@ -1,5 +1,5 @@
-<div class="h-auto overflow-x-scroll whitespace-nowrap">
-  <div class="inline-block p-4 w-full" *ngFor="let campaign of campaigns">
+<div #slider class="h-auto overflow-x-scroll slide-down-effect whitespace-nowrap slider-container" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" (touchend)="onTouchEnd($event)">
+  <div class="inline-block p-4 w-full slide" *ngFor="let campaign of campaigns">
     <div class="mx-auto">
       <div class="flex p-3 dark:bg-[#333542] border border-[#333542] rounded-xl overflow-hidden items-center justify-start">
 

@@ -75,5 +75,10 @@ export class DashboardComponent {
       action: ''
     }
   ]
+
+  //Navigations
+  navigateToMyQr() :void {
+    this.router.navigate(['/my-qrcode']);
+  }
     
 }
